@@ -1,0 +1,770 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vinted Copia</title>
+    <link rel="stylesheet" type="text/css" href="mhw3.css">
+    <script src="mhw3.js"></script>
+</head>
+
+<body>
+    <div class="page-container">
+        <header class="header spacer">
+            <div class="header-1">
+                <div class="logo-container">
+                    <a href="mhw2.html">
+                        <img src="	https://static.vinted.com/assets/web-logo/default/logo.svg" alt="">
+
+                    </a>
+                </div>
+
+                <div class="bar desktop">
+                    <button class="catalogo bar-element drop-btn" onclick="functionDropdown('myDropdown1')">
+                        <span>
+                            Catalogo
+                        </span>
+                        <svg viewBox="0 0 16 16" width="16" height="16">
+                            <path d="M8 12 2 6h12z"></path>
+                        </svg>
+                    </button>
+                    <div id="myDropdown1" class="dropdown-content">
+                        <a href="#">Catalogo</a>
+                        <a href="#">Utenti</a>
+                        <a href="#">Centro assistenza</a>
+                    </div>
+                    <div class="search bar-element">
+                        <svg viewBox="0 0 16 16" width="16" height="16">
+                            <path
+                                d="M7 11.5a4.5 4.5 0 1 1 .01-9.01A4.5 4.5 0 0 1 7 11.5zm4.74-.82a6 6 0 1 0-1.06 1.06l3.25 3.25L15 13.93l-3.25-3.25z">
+                            </path>
+                        </svg>
+                        <input type="search" placeholder="Cerca articoli" />
+                    </div>
+                </div>
+                <div class="right-bar">
+                    <a href="https://api.imgur.com/oauth2/authorize?client_id=369f0c65efeed0d&response_type=token&state=A" class="btn">
+                        Iscriviti | Accedi
+                    </a>
+                    <a href="" class="btn" >
+                        Vendi subito
+                    </a>
+                    <a href="" class="info" id="btn-help">
+                        <svg viewBox="0 0 24 24" width="24" height="24">
+                            <g fill="none" fill-rule="evenodd">
+                                <path d="M0 0h24v24H0z"></path>
+                                <path fill="currentColor"
+                                    d="M12.75 14.506h-1.5v-1.139c0-1.077.598-2.064 1.522-2.514a1.78 1.78 0 0 0 .927-2.068 1.741 1.741 0 0 0-1.218-1.218 1.766 1.766 0 0 0-1.559.305 1.75 1.75 0 0 0-.685 1.395h-1.5c0-1.017.46-1.958 1.266-2.58a3.285 3.285 0 0 1 2.853-.574 3.244 3.244 0 0 1 2.297 2.297c.398 1.542-.31 3.1-1.723 3.79-.413.202-.68.66-.68 1.167v1.139ZM12 2c5.523 0 10 4.478 10 10 0 5.523-4.477 10-10 10-5.524 0-10-4.477-10-10C2 6.479 6.476 2 12 2Zm0 1.5c-4.687 0-8.5 3.814-8.5 8.5 0 4.687 3.813 8.5 8.5 8.5 4.686 0 8.499-3.813 8.499-8.5 0-4.686-3.813-8.5-8.5-8.5Zm-1.003 13.507a1 1 0 1 1 2.001 0 1 1 0 1 1-2 0Z">
+                                </path>
+                            </g>
+                        </svg>
+                    </a>
+                    <div class="language">
+                        <span>IT</span>
+                        <svg viewBox="0 0 16 16" width="16" height="16">
+                            <path d="M8 12 2 6h12z"></path>
+                        </svg>
+                    </div>
+                </div>
+            </div>
+            <div class="header-mobile">
+                <div class="bar mobile">
+                    <button class="catalogo bar-element drop-btn" onclick="functionDropdown('myDropdown2')">
+                        <span>
+                            Catalogo
+                        </span>
+                        <svg viewBox="0 0 16 16" width="16" height="16">
+                            <path d="M8 12 2 6h12z"></path>
+                        </svg>
+                    </button>
+                    <div id="myDropdown2" class="dropdown-content">
+                        <a href="#">Catalogo</a>
+                        <a href="#">Utenti</a>
+                        <a href="#">Centro assistenza</a>
+                    </div>
+                    <div class="search bar-element">
+                        <svg viewBox="0 0 16 16" width="16" height="16">
+                            <path
+                                d="M7 11.5a4.5 4.5 0 1 1 .01-9.01A4.5 4.5 0 0 1 7 11.5zm4.74-.82a6 6 0 1 0-1.06 1.06l3.25 3.25L15 13.93l-3.25-3.25z">
+                            </path>
+                        </svg>
+                        <input type="search" placeholder="Cerca articoli" />
+                    </div>
+                </div>
+            </div>
+            <div class="header-2">
+                <ul class="nav-menu">
+                    <li class="nav-item">
+                        <a href="" class="nav-link donna">
+                            <span>Donna</span>
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="" class="nav-link uomo">
+                            <span>Uomo</span>
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="" class="nav-link bambini">
+                            <span>Bambini</span>
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="" class="nav-link casa">
+                            <span>Casa</span>
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="" class="nav-link intrattenimento">
+                            <span>Intrattenimento</span>
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="" class="nav-link animali">
+                            <span>Animali</span>
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="" class="nav-link informazioni">
+                            <span>Informazioni</span>
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="" class="nav-link piattaforma">
+                            <span>La nostra piattaforma</span>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </header>
+        <header class="header">
+            <div class="header-1">
+                <div class="logo-container">
+                    <a href="mhw2.html">
+                        <img src="	https://static.vinted.com/assets/web-logo/default/logo.svg" alt="">
+
+                    </a>
+                </div>
+
+                <div class="bar desktop">
+                    <button class="catalogo bar-element drop-btn" onclick="functionDropdown('myDropdown1')">
+                        <span>
+                            Catalogo
+                        </span>
+                        <svg viewBox="0 0 16 16" width="16" height="16">
+                            <path d="M8 12 2 6h12z"></path>
+                        </svg>
+                    </button>
+                    <div id="myDropdown1" class="dropdown-content">
+                        <a href="#">Catalogo</a>
+                        <a href="#">Utenti</a>
+                        <a href="#">Centro assistenza</a>
+                    </div>
+                    <div class="search bar-element">
+                        <svg viewBox="0 0 16 16" width="16" height="16">
+                            <path
+                                d="M7 11.5a4.5 4.5 0 1 1 .01-9.01A4.5 4.5 0 0 1 7 11.5zm4.74-.82a6 6 0 1 0-1.06 1.06l3.25 3.25L15 13.93l-3.25-3.25z">
+                            </path>
+                        </svg>
+                        <input type="search" placeholder="Cerca articoli" />
+                    </div>
+                </div>
+                <div class="right-bar">
+                    <a href="https://api.imgur.com/oauth2/authorize?client_id=369f0c65efeed0d&response_type=token" class="btn" id="btn-accedi">
+                        Iscriviti | Accedi
+                    </a>
+                    <a href="" class="btn" id="btn-vendi">
+                        Vendi subito
+                    </a>
+                    <a href="" class="info" id="btn-help">
+                        <svg viewBox="0 0 24 24" width="24" height="24">
+                            <g fill="none" fill-rule="evenodd">
+                                <path d="M0 0h24v24H0z"></path>
+                                <path fill="currentColor"
+                                    d="M12.75 14.506h-1.5v-1.139c0-1.077.598-2.064 1.522-2.514a1.78 1.78 0 0 0 .927-2.068 1.741 1.741 0 0 0-1.218-1.218 1.766 1.766 0 0 0-1.559.305 1.75 1.75 0 0 0-.685 1.395h-1.5c0-1.017.46-1.958 1.266-2.58a3.285 3.285 0 0 1 2.853-.574 3.244 3.244 0 0 1 2.297 2.297c.398 1.542-.31 3.1-1.723 3.79-.413.202-.68.66-.68 1.167v1.139ZM12 2c5.523 0 10 4.478 10 10 0 5.523-4.477 10-10 10-5.524 0-10-4.477-10-10C2 6.479 6.476 2 12 2Zm0 1.5c-4.687 0-8.5 3.814-8.5 8.5 0 4.687 3.813 8.5 8.5 8.5 4.686 0 8.499-3.813 8.499-8.5 0-4.686-3.813-8.5-8.5-8.5Zm-1.003 13.507a1 1 0 1 1 2.001 0 1 1 0 1 1-2 0Z">
+                                </path>
+                            </g>
+                        </svg>
+                    </a>
+                    <div class="language">
+                        <span>IT</span>
+                        <svg viewBox="0 0 16 16" width="16" height="16">
+                            <path d="M8 12 2 6h12z"></path>
+                        </svg>
+                    </div>
+                </div>
+            </div>
+            <div class="header-mobile">
+                <div class="bar mobile">
+                    <button class="catalogo bar-element drop-btn" onclick="functionDropdown('myDropdown2')">
+                        <span>
+                            Catalogo
+                        </span>
+                        <svg viewBox="0 0 16 16" width="16" height="16">
+                            <path d="M8 12 2 6h12z"></path>
+                        </svg>
+                    </button>
+                    <div id="myDropdown2" class="dropdown-content">
+                        <a href="#">Catalogo</a>
+                        <a href="#">Utenti</a>
+                        <a href="#">Centro assistenza</a>
+                    </div>
+                    <div class="search bar-element">
+                        <svg viewBox="0 0 16 16" width="16" height="16">
+                            <path
+                                d="M7 11.5a4.5 4.5 0 1 1 .01-9.01A4.5 4.5 0 0 1 7 11.5zm4.74-.82a6 6 0 1 0-1.06 1.06l3.25 3.25L15 13.93l-3.25-3.25z">
+                            </path>
+                        </svg>
+                        <input type="search" placeholder="Cerca articoli" />
+                    </div>
+                </div>
+            </div>
+            <div class="header-2">
+                <ul class="nav-menu">
+                    <li class="nav-item">
+                        <a href="" class="nav-link donna">
+                            <span>Donna</span>
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="" class="nav-link uomo">
+                            <span>Uomo</span>
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="" class="nav-link bambini">
+                            <span>Bambini</span>
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="" class="nav-link casa">
+                            <span>Casa</span>
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="" class="nav-link intrattenimento">
+                            <span>Intrattenimento</span>
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="" class="nav-link animali">
+                            <span>Animali</span>
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="" class="nav-link informazioni">
+                            <span>Informazioni</span>
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="" class="nav-link piattaforma">
+                            <span>La nostra piattaforma</span>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </header>
+
+        <main>
+            <div class="hero-block">
+                <img src="https://static.vinted.com/assets/seller-promotion/other/banner-wide-9b45d0aa9a311c4ff6013e9cf3bc2b6646468be3d2f553192c63598685fcc177.jpg"
+                    alt="" class="image-content">
+
+                <section class="hero-container">
+                    <div class="hero">
+                        <h1> È arrivato il momento di liberare l'armadio!</h1>
+                        <a href="" class="sell btn">
+                            Vendi subito
+                        </a>
+                        <a href="" class="sell-2">
+                            Scopri come funziona
+                        </a>
+                    </div>
+                </section>
+
+                <div class="hero-overlay"></div>
+            </div>
+
+            <div class="container-distance">
+
+                <p class="paragraph-container">Le spese di spedizione saranno aggiunte al momento del pagamento.</p>
+
+                <section>
+                    <div class="banner-container">
+                        <div class="banner">
+                            <a href="" class="banner-scroll">
+                                <img class="img-banner" src="./image/horizzontal-banner-1.jpg" alt="">
+                            </a>
+                            <div class="content">
+                                <div class="spacer">
+                                    <div class="top">
+                                        <p class="title">Novità</p>
+                                        <p class="subtitle">Scopri moda di lusso</p>
+                                    </div>
+                                    <div class="btn-container">
+                                        <button class="btn" id="esplora-moda">
+                                            Esplora moda di lusso
+                                        </button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="banner">
+                            <a href="" class="banner-scroll">
+                                <img class="img-banner" src="./image/horizzontal-banner-2.jpg" alt="">
+                            </a>
+                            <div class="content">
+                                <div class="spacer">
+
+                                    <div class="top">
+                                        <p class="title">
+
+                                            <img class="mini-img" src="./image/authenticity-diamond-24.png" alt="">
+                                            <span>
+                                                Verifica dell'articolo
+                                            </span>
+                                        </p>
+
+                                        <p class="subtitle">Articoli verificati dai nostri esperti</p>
+                                    </div>
+                                    <div class="btn-container">
+                                        <button class="btn" id="esplora-articoli">
+                                            Esplora articoli griffati
+                                        </button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+
+
+                    </div>
+                </section>
+
+                <div class="elenco-brand">
+                    <h3>
+                        Acquista per brand
+                    </h3>
+                    <div class="brand-container">
+
+                        <a href="" class="brand burberry">
+                            Burberry
+                        </a>
+                        <a href="" class="brand reebok">
+                            Reebok
+                        </a>
+                        <a href="" class="brand diesel">
+                            Diesel
+                        </a>
+                        <a href="" class="brand newbalanca">
+                            New Balance
+                        </a>
+                        <a href="" class="brand jordan">
+                            Jordan
+                        </a>
+                        <a href="" class="brand timberland">
+                            Timberland
+                        </a>
+                        <a href="" class="brand sandro">
+                            Sandro
+                        </a>
+                        <a href="" class="brand promod">
+                            Promod
+                        </a>
+                        <a href="" class="brand Puma">
+                            Puma
+                        </a>
+                    </div>
+
+                </div>
+
+                <div class="Ricerche-Suggerite">
+                    <h3>
+                        Ricerche suggerite
+                    </h3>
+                    <div class="ricerche-suggerite-container">
+
+                        <a href="" class="ricerche-suggerite-brand lego-game">
+                            <span class="nome">
+                                LEGO giochi
+                            </span>
+                            <div class="visualizzazioni lego-game ">
+                                213K visualizzazioni
+                            </div>
+                        </a>
+
+                        <a href="" class="ricerche-suggerite-brand apple">
+                            <span class="nome">
+                                Apple
+                            </span>
+                            <div class="visualizzazioni apple ">
+                                283K visualizzazioni
+                            </div>
+                        </a>
+
+                        <a href="" class="ricerche-suggerite-brand nothface ">
+                            <span class="nome">
+                                The North Face
+                            </span>
+                            <div class=" visualizzazioni northface">
+                                424K visualizzazioni
+                            </div>
+                        </a>
+
+                        <a href="" class="ricerche-suggerite-brand lego">
+                            <span class="nome">
+                                LEGO
+                            </span>
+                            <div class="visualizzazioni lego ">
+                                258K visualizzazioni
+                            </div>
+                        </a>
+
+                        <a href="" class="ricerche-suggerite-brand Diesel ">
+                            <span class="nome">
+                                Diesel
+                            </span>
+                            <div class="visualizzazioni diesel ">
+                                327K visualizzazioni
+                            </div>
+                        </a>
+
+                        <a href="" class="ricerche-suggerite-brand guess-borse ">
+                            <span class="nome">
+                                GUESS borse
+                            </span>
+                            <div class="visualizzazioni guess-borse ">
+                                479K visualizzazioni
+                            </div>
+                        </a>
+
+                        <a href="" class="ricerche-suggerite-brand ralphlauren ">
+                            <span class="nome">
+                                Ralph Lauren
+                            </span>
+                            <div class="visualizzazioni ralphlauren ">
+                                1M visualizzazioni
+                            </div>
+                        </a>
+
+                        <a href="" class="ricerche-suggerite-brand playstation ">
+                            <span class="nome">
+                                PlayStation
+                            </span>
+
+                            <div class="visualizzazioni playstation ">
+                                418K visualizzazioni
+                            </div>
+                        </a>
+                    </div>
+
+                </div>
+
+                <div class="Feed">
+                    <h3>
+                        Feed
+                    </h3>
+                    <div class="feed-grid">
+                        <div class="box-grid-container 1">
+                            <div class="feed-itwem-owner 1">
+                                <a href="" class="member-web">
+                                    <span>
+                                        <img class="user-img" src="" class="profile-img" alt="">
+                                    </span>
+                                    <span class="user-name"> </span>
+                                </a>
+                            </div>
+
+                            <a href="" class="feed-item-box-image 1">
+                                <img src="./image/sell-element-owner1.jpg" class="box-image" alt="">
+                            </a>
+
+                            <div class="presentation-box-sell">
+                                <div class="element-sell">
+                                    <div class="prize">
+                                        10,00€
+                                    </div>
+
+                                    <div class="favorite">
+                                        <a href="" class="favorite-like">
+                                            <span>
+                                                <svg viewBox="0 0 16 16" width="16" height="16" aria-label="Add to favourites"><path d="M11.73 1C9.58 1 8 2.74 8 2.74S6.42 1 4.27 1c-.7 0-1.48.2-2.28.7-2.92 1.88-2.47 5.86.34 8.5A83.4 83.4 0 0 0 8 15s3.04-2.32 5.67-4.8c2.81-2.64 3.26-6.62.34-8.5-.8-.5-1.57-.7-2.28-.7m0 1.5c.5 0 .98.15 1.47.47.77.5 1.2 1.2 1.29 2.07.12 1.33-.59 2.88-1.85 4.07A79.25 79.25 0 0 1 8 13.1a79.1 79.1 0 0 1-4.64-3.98C2.1 7.93 1.39 6.37 1.51 5.05c.09-.89.52-1.59 1.3-2.08.48-.32.96-.47 1.46-.47 1.44 0 2.62 1.25 2.62 1.25L8 4.97l1.1-1.22c.02-.01 1.21-1.25 2.63-1.25"></path></svg>
+                                            </span>
+                                        </a>
+                                    </div>
+                                </div>
+
+                                <a href="" class="prize-plus-spedition">
+                                    11,20 € incl.
+                                    <svg fill="none" viewBox="0 0 12 12" width="12" height="12"><path fill="currentColor" d="m7.924 4.114.708.707-2.829 2.828-2.121-2.121.707-.707 1.414 1.414 2.121-2.121Z"></path><path fill="currentColor" fill-rule="evenodd" d="M11 6c0 4.2-5 6-5 6s-5-1.8-5-6V1.8L6 0l5 1.8V6ZM2 6V2.503l4-1.44 4 1.44V6c0 1.66-.98 2.902-2.115 3.787A9.368 9.368 0 0 1 6 10.916a9.368 9.368 0 0 1-1.885-1.13C2.981 8.902 2 7.66 2 6Zm3.66 5.06c-.001 0 0 0 0 0Z" clip-rule="evenodd"></path></svg>
+                                </a>
+
+                                <div class="size-brand">
+                                    M
+                                </div>
+
+                                <div class="type-brand">
+                                    Nike
+                                </div>
+
+                            </div>
+                        </div>
+                        <div class="box-grid-container 2">
+                            <div class="feed-itwem-owner 2">
+                                <a href="" class="member-web">
+                                    <span>
+                                        <img class="user-img" src="" class="profile-img" alt="">
+                                    </span>
+                                    <span class="user-name"> </span>
+                                </a>
+                            </div>
+
+                            <a href="" class="feed-item-box-image 2">
+                                <img src="./image/sell-element-owner2.jpeg" class="box-image" alt="">
+                            </a>
+
+                            <div class="presentation-box-sell 2">
+                                <div class="element-sell ">
+                                    <div class="prize">
+                                        120,00€
+                                    </div>
+
+                                    <div class="favorite">
+                                        <a href="" class="favorite-like">
+                                            <span>
+                                                <svg viewBox="0 0 16 16" width="16" height="16" aria-label="Add to favourites"><path d="M11.73 1C9.58 1 8 2.74 8 2.74S6.42 1 4.27 1c-.7 0-1.48.2-2.28.7-2.92 1.88-2.47 5.86.34 8.5A83.4 83.4 0 0 0 8 15s3.04-2.32 5.67-4.8c2.81-2.64 3.26-6.62.34-8.5-.8-.5-1.57-.7-2.28-.7m0 1.5c.5 0 .98.15 1.47.47.77.5 1.2 1.2 1.29 2.07.12 1.33-.59 2.88-1.85 4.07A79.25 79.25 0 0 1 8 13.1a79.1 79.1 0 0 1-4.64-3.98C2.1 7.93 1.39 6.37 1.51 5.05c.09-.89.52-1.59 1.3-2.08.48-.32.96-.47 1.46-.47 1.44 0 2.62 1.25 2.62 1.25L8 4.97l1.1-1.22c.02-.01 1.21-1.25 2.63-1.25"></path></svg>
+                                            </span>
+                                        </a>
+                                    </div>
+                                </div>
+
+                                <a href="" class="prize-plus-spedition">
+                                    121,25 € incl.
+                                    <svg fill="none" viewBox="0 0 12 12" width="12" height="12">
+                                        <path fill="currentColor"
+                                            d="m7.924 4.114.708.707-2.829 2.828-2.121-2.121.707-.707 1.414 1.414 2.121-2.121Z">
+                                        </path>
+                                        <path fill="currentColor" fill-rule="evenodd"
+                                            d="M11 6c0 4.2-5 6-5 6s-5-1.8-5-6V1.8L6 0l5 1.8V6ZM2 6V2.503l4-1.44 4 1.44V6c0 1.66-.98 2.902-2.115 3.787A9.368 9.368 0 0 1 6 10.916a9.368 9.368 0 0 1-1.885-1.13C2.981 8.902 2 7.66 2 6Zm3.66 5.06c-.001 0 0 0 0 0Z"
+                                            clip-rule="evenodd"></path>
+                                    </svg>
+                                </a>
+
+                                <div class="size-brand">
+                                    One Size
+                                </div>
+
+                                <div class="type-brand">
+                                    Guess
+                                </div>
+
+
+                            </div>
+                        </div>
+
+                        <div class="box-grid-container 3">
+                            <div class="feed-itwem-owner 3">
+                                <a href="" class="member-web">
+                                    <span>
+                                        <img class="user-img" src="" class="profile-img" alt="">
+                                    </span>
+                                    <span class="user-name"> </span>
+                                </a>
+                            </div>
+
+                            <a href="" class="feed-item-box-image 3">
+                                <img src="./image/sell-element-owner3.jpeg" class="box-image" alt="">
+                            </a>
+
+                            <div class="presentation-box-sell 3">
+                                <div class="element-sell ">
+                                    <div class="prize">
+                                        25,00€
+                                    </div>
+
+                                    <div class="favorite">
+                                        <a href="" class="favorite-like">
+                                            <span>
+                                                <svg viewBox="0 0 16 16" width="16" height="16" aria-label="Add to favourites"><path d="M11.73 1C9.58 1 8 2.74 8 2.74S6.42 1 4.27 1c-.7 0-1.48.2-2.28.7-2.92 1.88-2.47 5.86.34 8.5A83.4 83.4 0 0 0 8 15s3.04-2.32 5.67-4.8c2.81-2.64 3.26-6.62.34-8.5-.8-.5-1.57-.7-2.28-.7m0 1.5c.5 0 .98.15 1.47.47.77.5 1.2 1.2 1.29 2.07.12 1.33-.59 2.88-1.85 4.07A79.25 79.25 0 0 1 8 13.1a79.1 79.1 0 0 1-4.64-3.98C2.1 7.93 1.39 6.37 1.51 5.05c.09-.89.52-1.59 1.3-2.08.48-.32.96-.47 1.46-.47 1.44 0 2.62 1.25 2.62 1.25L8 4.97l1.1-1.22c.02-.01 1.21-1.25 2.63-1.25"></path></svg>
+                                            </span>
+                                        </a>
+                                    </div>
+                                </div>
+
+                                <a href="" class="prize-plus-spedition">
+                                    27,35 € incl.
+                                    <svg fill="none" viewBox="0 0 12 12" width="12" height="12">
+                                        <path fill="currentColor"
+                                            d="m7.924 4.114.708.707-2.829 2.828-2.121-2.121.707-.707 1.414 1.414 2.121-2.121Z">
+                                        </path>
+                                        <path fill="currentColor" fill-rule="evenodd"
+                                            d="M11 6c0 4.2-5 6-5 6s-5-1.8-5-6V1.8L6 0l5 1.8V6ZM2 6V2.503l4-1.44 4 1.44V6c0 1.66-.98 2.902-2.115 3.787A9.368 9.368 0 0 1 6 10.916a9.368 9.368 0 0 1-1.885-1.13C2.981 8.902 2 7.66 2 6Zm3.66 5.06c-.001 0 0 0 0 0Z"
+                                            clip-rule="evenodd"></path>
+                                    </svg>
+
+                                </a>
+
+                                <div class="size-brand">
+                                    One size
+                                </div>
+
+                                <div class="type-brand">
+                                    Ralph Lauren
+                                </div>
+
+
+                            </div>
+                        </div>
+
+                    </div>
+
+                    
+                </div>
+
+            </div>
+
+            <footer class="footer">
+                <div class="footer-top">
+                        <div class="footer-col">
+                            <h4>Vinted</h4>
+                            <a href="" class="Chi-siamo underline-link">
+                                Chi siamo
+                            </a>
+                            <a href="" class="Lavori underline-link">
+                                Lavori
+                            </a>
+                            <a href="" class="la-sostenibilità underline-link">
+                                La sostenibilità
+                            </a>
+                            <a href="" class="Stampa underline-link">
+                                Stampa
+                            </a>
+                            <a href="" class="pubblicità underline-link">
+                                Pubblicità
+                            </a>
+                        </div>
+
+                        <div class="footer-col">
+                            <h4>Scopri</h4>
+                            <a href="" class="Come-funziona underline-link">
+                                Come funziona
+                            </a>
+                            <a href="" class="Verifica-articolo underline-link">
+                                Verifica dell'articolo
+                            </a>
+                            <a href="" class="app-mobili underline-link">
+                                App mobili
+                            </a>
+                            <a href="" class="Notizie underline-link">
+                                Notizie
+                            </a>
+                            <a href="" class="vinted-pro underline-link">
+                                Vinted Pro
+                            </a>
+                            <a href="" class="guida-vint-pro underline-link">
+                                Guida a Vinted Pro
+                            </a>
+                        </div>
+
+                        <div class="footer-col">
+                            <h4>Assistenza</h4>
+                            <a href="" class="Centro-assist underline-link">
+                                Centro Assistenza
+                            </a>
+                            <a href="" class="Vendere underline-link">
+                                Vendere
+                            </a>
+                            <a href="" class="acquistare underline-link">
+                                Acquistare
+                            </a>
+                            <a href="" class="sicure-affidab underline-link">
+                                Sicurezza e affidabilità
+                            </a>
+                        </div>
+                </div>
+
+                    <div class="footer-middle">
+
+                        <div class="footer-row">
+                            <a href="" class="facebook-link">
+                                <span>
+                                    <img src="./image/facebook.svg" alt="">
+                                </span>
+                            </a>
+
+                            <a href="" class="linkedin-link">
+                                <span>
+                                    <img src="./image/linkedin.svg" alt="">
+                                </span>
+                            </a>
+
+                            <a href="" class="instagram-link">
+                                <span>
+                                    <img src="./image/instagram.svg" alt="">
+                                </span>
+                            </a>
+                        </div>
+
+                        <div class="footer-row">
+                            <a href="" class="download-app-store">
+                                <span>
+                                    <img src="./image/download-app-store.svg" alt="">
+                                </span>
+                            </a>
+
+                            <a href="" class="download-google-play">
+                                <span>
+                                    <img src="./image/down-google-play.svg" alt="">
+                                </span>
+                            </a>
+                        </div>
+
+
+                    </div>
+
+                    <div class="footer-bottom">
+                        <div class="information-list">
+                            <ul class="list-info-footer3">
+                                <li class="list-info-item">
+                                    <a href="" class="Informativa-sulla-privacy underline-link">
+                                        <span>Informativa sulla privacy</span>
+                                    </a>
+                                </li>
+                                <li class="list-info-item">
+                                    <a href="" class="informativa-sui-cookie underline-link">
+                                        <span>Informativa sui cookie</span>
+                                    </a>
+                                </li>
+                                <li class="list-info-item">
+                                    <a href="" class="impostazioni-coohie underline-link">
+                                        <span>Impostazioni cookie</span>
+                                    </a>
+                                </li>
+                                <li class="list-info-item">
+                                    <a href="" class="termini-condizioni underline-link">
+                                        <span>Termini e condizioni</span>
+                                    </a>
+                                </li>
+                                <li class="list-info-item">
+                                    <a href="" class="la-nostra-piattaforma underline-link">
+                                        <span>La nostra piattaforma</span>
+                                    </a>
+                                </li>
+                                <li class="list-info-item">
+                                    <a href="" class="term-cond-vint-pro underline-link">
+                                        <span>Termini e condizioni di Vinted Pro</span>
+                                    </a>
+                                </li>
+                        </div>
+                    </div>
+        </main>
+
+        </footer>
+    </div>
+    </div>
+
+</body>
+
+</html>
